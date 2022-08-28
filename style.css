@@ -1,0 +1,248 @@
+/*---------Обнуляющий стиль-----------*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+@font-face {
+	font-family: FrederickatheGreat-Regular;
+	src: url(../Fonts/FrederickatheGreat-Regular.ttf);
+}
+
+header{
+	background: url(../img/21.png) no-repeat center center;
+	background-size: cover;
+	height: 100vh;
+}
+nav{
+	display: flex;
+	justify-content: flex-end;
+}
+.menu_link{
+	color: rgb(255, 255, 255);
+	font-size: 30px;
+	padding: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right: 30px;
+	border-radius: 10px;
+	width: 170px;
+	text-align: center;
+	transition-duration: 0.3s;
+	font-family: 'Fredericka the Great', cursive;
+	background-color: rgba(0, 0, 0, 0.37);
+	border: 2px rgba(255, 255, 255, 0.7) solid;
+}
+.menu_link:hover{
+	transform: scale(1.2);
+}
+.first_page{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+.first_page_block{
+	text-align: center;
+	margin: 0 auto;
+	border-radius: 20px;
+	width: auto;
+	height: auto;
+}
+h1{
+	font-size: 75px;
+	color: rgb(255, 255, 255);
+	margin-bottom: 0px;
+	font-family: 'Fredericka the Great', cursive;
+}
+h2{
+	font-size: 55px;
+	color: rgb(255, 255, 255);
+	margin-bottom: 50px;
+	font-family: 'Fredericka the Great', cursive;
+}
+.start{
+	display: inline-block;
+	color: rgb(255, 255, 255);
+	padding: 8px;
+	border: 2px #fff solid;
+	border-radius: 10px;
+	font-size: 30px;
+	transition-duration: 0.3s;
+	font-family: 'Fredericka the Great', cursive;
+}
+
+.start:hover{
+	transform: scale(1.2);
+	cursor: pointer;
+	transition-duration: 0.3s;
+}
+.about_bg{
+	background: url(../img/about_back.png) no-repeat center center;
+	background-size: cover;
+	height: 100vh;
+}
+.about_block{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;	
+	flex-direction: column;
+}
+.about_city{
+	text-align: center;
+	font-size: 60px;
+	color: rgb(255, 255, 255);
+
+	font-family: 'Fredericka the Great', cursive;
+}
+.about_col{
+	display: flex;
+	margin-top: 50px;
+	align-items: center;
+	justify-content: space-between;
+}
+.city {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+    height: 480px;
+    margin: 30px auto;
+    border: 8px solid #ffffff;
+    background: #BFE2FF;
+    border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+    box-shadow: 15px 15px 50px rgba(0,0,0,0.2);
+    animation: anim-ramka-1 5s infinite;
+    font-size: 24px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+@keyframes anim-ramka-1 {
+    0% {
+        border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+        box-shadow: 15px 15px 50px rgba(0,0,0,0.2);
+    }
+    25% {
+        border-radius: 58% 42% 75% 25%/76% 46% 54% 24%;
+    }
+    50% {
+        border-radius: 50% 50% 33% 67%/55% 27% 73% 45%;
+        box-shadow: -10px -5px 50px rgba(0,0,0,0.2);
+    }
+    75% {
+        border-radius: 33% 67% 58% 42%/63% 68% 32% 37%;
+    }
+}
+.city:hover{
+	transform: scale(1.2);
+	transition: all .5s ease-in-out;
+}
+.col_inf{
+	max-width: 800px;
+	font-size: 30px;
+	text-align: justify;
+	font-family: 'Kulim Park', sans-serif;
+	text-indent: 1.5em;
+	color: rgb(255, 255, 255);
+}
+.photo_bg{
+	background: url(../img/photo_back.png) no-repeat center center;
+	background-size: cover;
+	height: 100vh;
+}
+.photo_block{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height:100vh ;	
+	flex-wrap: wrap;
+	gap: 15px;
+	flex-direction: column;
+}
+.photo_text{
+	text-align: center;
+	font-size: 60px;
+	color: rgb(255, 255, 255);
+	font-family: 'Fredericka the Great', cursive;
+}
+.photo_col{
+	flex-wrap: wrap;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.photo{
+	display: flex;
+	flex-direction: column;
+	padding: 0 10px;
+}
+.photo_item{
+	width: 600px;
+	height: 500px;	
+}
+.photo_block_link{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgba(255, 255, 255, 0.11);
+	padding-left: 10px;
+}
+.about_item{
+	font-size: 25px;
+	font-family: 'Roboto Condensed', sans-serif;
+	margin-top: 10px;
+	color: rgb(255, 255, 255);
+}
+.item_link{
+	text-align: right;
+	color: rgb(0, 0, 0);
+	border-radius: 10px;
+	transition-duration: 0.3s;
+	font-family: 'Roboto Condensed', sans-serif;
+	width: 100px;
+	margin-top: 10px;
+}
+.inst_link{
+	height: 70px;
+}
+.footer{
+	font-size: 20px;
+	text-align: center;
+	font-family: 'Fredericka the Great', cursive;
+	font-family: 'Architects Daughter', cursive;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 30px;
+}
